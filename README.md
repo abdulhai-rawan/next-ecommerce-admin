@@ -1,36 +1,152 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# eCommerce Admin (Backend)  
 
-## Getting Started
+This is the **backend/admin dashboard** for a full-stack eCommerce project. Built with **Next.js 15**, **Prisma**, **MySQL**, **NextAuth**, and **Clerk Auth**, this admin interface allows store managers to manage products, orders, and users. It integrates seamlessly with the **frontend** side of the project, which can be found here:  
 
-First, run the development server:
+**Frontend Repository:** [View Here](https://github.com/abdulhai-rawan/next-ecommerce-store.git)  
+
+## [Demo](https://next-ecommerce-admin-black.vercel.app/)  
+
+![Project Screenshot](https://raw.githubusercontent.com/abdulhai-rawan/next-ecommerce-store/refs/heads/master/public/Screenshot%202024-12-03%20143556.png)  
+
+---
+
+## Features  
+
+- **Admin Dashboard**: Manage products, users, and orders for the eCommerce store.  
+- **Authentication**: Integrates with **NextAuth** and **Clerk Auth** for secure user login and roles.  
+- **Database Integration**: Powered by **Prisma** and **MySQL** for managing store data.  
+- **RESTful API**: Handles CRUD operations for products, orders, and users.  
+
+---
+
+## Credits  
+
+**Instructor Name:** Antonio Erdeljac  
+**Video Tutorial:** [Watch here](https://www.youtube.com/watch?v=5miHyP6lExg)  
+
+---
+
+## Prerequisites  
+
+- **Next.js version 15.x or above**  
+- **npm** or **yarn** installed  
+- **MySQL database**  
+
+---
+
+## Getting Started  
+
+### Cloning the Repository  
+
+```bash
+git clone https://github.com/abdulhai-rawan/next-ecommerce-admin.git
+```
+
+### Navigate to the Project Directory  
+
+```bash
+cd next-ecommerce-admin
+```
+
+### Install Dependencies  
+
+```bash
+npm install
+```
+
+### Setup Environment Variables  
+
+Create an `.env.local` file in the root directory and populate it with the following variables:  
+
+```bash
+FRONTEND_STORE_URL=                   # URL of the frontend app
+DATABASE_URL=                          # Your MySQL database URL
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=     # Clerk Publishable Key
+CLERK_SECRET_KEY=                      # Clerk Secret Key
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=         # URL for Clerk sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=         # URL for Clerk sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=   # Redirect after sign-in
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=   # Redirect after sign-up
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=     # Cloudinary Cloud Name
+STRIPE_API_KEY=                        # Stripe API Key for payments
+```
+
+---
+
+## Running the Application  
+
+Start the development server:  
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build the project for production:  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Serve the production build:  
 
-## Learn More
+```bash
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Available Commands  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+| Command          | Description                              |  
+| ----------------- | ---------------------------------------- |  
+| `npm run dev`     | Starts the development server           |  
+| `npm run build`   | Builds the application for production   |  
+| `npm run start`   | Starts the production server            |  
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project Structure  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```plaintext
+next-ecommerce-admin/
+├── public/          # Static assets like images and fonts
+├── pages/           # Application pages (Next.js routing)
+├── components/      # Reusable UI components
+├── prisma/          # Prisma schema and migrations
+├── utils/           # Utility functions and helpers
+├── package.json     # Project dependencies and scripts
+├── env.example      # Example environment configuration
+└── README.md        # Project documentation
+```
+
+---
+
+## Deployment  
+
+This project is deployed on **Vercel**. For custom deployment, follow these steps:  
+
+1. Build the application:  
+   ```bash
+   npm run build
+   ```
+2. Deploy the `.next` folder to your hosting provider.  
+
+---
+
+## Contributing  
+
+Contributions are welcome! If you have any suggestions or improvements, please:  
+
+1. Fork the repository.  
+2. Create a feature branch:  
+   ```bash
+   git checkout -b feature-name
+   ```  
+3. Commit your changes and push the branch.  
+4. Create a pull request.  
+
+---
+
+## License  
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.  
