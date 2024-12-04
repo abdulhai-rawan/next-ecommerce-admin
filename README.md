@@ -4,7 +4,7 @@ This is the **backend/admin dashboard** for a full-stack eCommerce project. Buil
 
 **Frontend Repository:** [View Here](https://github.com/abdulhai-rawan/next-ecommerce-store.git)  
 
-## [Demo](https://next-ecommerce-admin-black.vercel.app/)  
+## [Demo](https://next-ecommerce-admin-app-pink.vercel.app/)  
 
 ## Screenshots
 
