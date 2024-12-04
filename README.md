@@ -6,7 +6,12 @@ This is the **backend/admin dashboard** for a full-stack eCommerce project. Buil
 
 ## [Demo](https://next-ecommerce-admin-black.vercel.app/)  
 
-![Project Screenshot](https://raw.githubusercontent.com/abdulhai-rawan/next-ecommerce-store/refs/heads/master/public/Screenshot%202024-12-03%20143556.png)  
+## Screenshots
+
+![Project Screenshot](https://raw.githubusercontent.com/abdulhai-rawan/next-ecommerce-admin/refs/heads/master/public/screenshots/1.png)
+![Project Screenshot](https://raw.githubusercontent.com/abdulhai-rawan/next-ecommerce-admin/refs/heads/master/public/screenshots/2.png)
+![Project Screenshot](https://raw.githubusercontent.com/abdulhai-rawan/next-ecommerce-admin/refs/heads/master/public/screenshots/3.png)
+![Project Screenshot](https://raw.githubusercontent.com/abdulhai-rawan/next-ecommerce-admin/refs/heads/master/public/screenshots/4.png)
 
 ---
 
@@ -16,13 +21,6 @@ This is the **backend/admin dashboard** for a full-stack eCommerce project. Buil
 - **Authentication**: Integrates with **NextAuth** and **Clerk Auth** for secure user login and roles.  
 - **Database Integration**: Powered by **Prisma** and **MySQL** for managing store data.  
 - **RESTful API**: Handles CRUD operations for products, orders, and users.  
-
----
-
-## Credits  
-
-**Instructor Name:** Antonio Erdeljac  
-**Video Tutorial:** [Watch here](https://www.youtube.com/watch?v=5miHyP6lExg)  
 
 ---
 
@@ -150,3 +148,8 @@ Contributions are welcome! If you have any suggestions or improvements, please:
 ## License  
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.  
+
+---
+
+## Credits  
+Special thanks to [CodeWithAntonio](https://github.com/AntonioErdeljac) for this project ⭐
